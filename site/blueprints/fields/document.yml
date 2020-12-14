@@ -1,0 +1,9 @@
+label: Dokument
+type: files
+query: site.documents
+layout: list
+multiple: false
+image:
+  cover: true
+info: "{{ file.niceSize }}"
+empty: Kein Dokument ausgewählt!

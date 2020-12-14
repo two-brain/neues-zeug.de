@@ -1,0 +1,31 @@
+{
+    "name": "two-brain/neues-zeug.de",
+    "description": "Future source code for neues-zeug.de",
+    "type": "project",
+    "keywords": ["gulp", "kirby", "cms", "starterkit"],
+    "homepage": "https://github.com/two-brain/neues-zeug.de#readme",
+    "authors": [
+        {
+            "name": "S1SYPHOS",
+            "email": "hello@twobrain.io",
+            "homepage": "https://twobrain.io"
+        }
+    ],
+    "support": {
+        "email": "support@twobrain.io",
+        "issues": "https://github.com/two-brain/neues-zeug.de/issues",
+        "forum": "https://forum.getkirby.com",
+        "source": "https://github.com/two-brain/neues-zeug.de"
+    },
+    "require": {
+        "php": ">=7.2.0",
+        "getkirby/cms": "3.5.0-rc.6",
+        "afbora/kirby-minify-html": "^1.2",
+        "bnomei/kirby3-fingerprint": "^3.0",
+        "k-community/markdown-field": "^1.0",
+        "olach/relationship": "^1.0"
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}

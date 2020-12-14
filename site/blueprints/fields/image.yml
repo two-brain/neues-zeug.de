@@ -1,0 +1,10 @@
+label: Bild
+type: files
+query: site.images
+layout: cards
+size: huge
+multiple: false
+image:
+  cover: true
+info: "{{ file.dimensions }} ({{ file.niceSize }})"
+empty: Kein Bild ausgewählt!

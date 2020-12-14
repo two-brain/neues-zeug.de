@@ -1,0 +1,9 @@
+type: pages
+template: work
+layout: cards
+size: medium
+sortBy: date desc
+parent: site.find('kompositionen')
+image: page.cover.toFile
+text: "{{ page.title }} ({{ page.instruments }})"
+info: "{{ page.composer }}"

@@ -1,0 +1,49 @@
+# Development
+# -----
+
+*.bak
+/.ideas
+/.vagrant
+/node_modules
+/vendor
+
+# Temporary files
+# ---------------
+
+/yarn.lock
+/composer.lock
+
+/public/media
+/public/assets
+/public/favicons
+/site/logs
+
+# Plugins
+# ---------------
+/site/plugins/*
+!/site/plugins/fundevogel
+!/site/plugins/kirby3-pcbis
+
+# Toolset
+# ---------------
+/lib/toolset/*
+!/lib/toolset/*.py
+!/lib/toolset/*.php
+!/lib/toolset/*.bash
+!/lib/toolset/graveyard
+
+# -------------SECURITY-------------
+# NEVER publish these files via Git!
+# -------------SECURITY-------------
+
+# Accounts + Cache + Sessions
+# ---------------
+/storage
+
+# Login credentials
+# ---------------
+/site/config/*.json
+
+# License
+# ---------------
+/site/config/.license

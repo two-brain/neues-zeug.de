@@ -1,0 +1,16 @@
+label: Inhalt
+icon: text
+preset: page
+
+fields:
+  blocks:
+    label: Offener Bereich
+    type: blocks
+
+sidebar:
+  sidebar_fields:
+    type: fields
+
+  sidebar_files:
+    headline: Dateien
+    type: files

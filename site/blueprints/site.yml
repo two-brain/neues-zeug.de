@@ -1,0 +1,31 @@
+title: Neues Zeug
+
+tabs:
+  tab_compositions: tabs/compositions
+
+  tab_participants: tabs/participants
+
+  tab_partners: tabs/partners
+
+  tab_settings:
+    label: FAQ
+    icon: question
+
+    columns:
+      column_full:
+        sections:
+          section_main:
+            type: fields
+            fields:
+              faq:
+                label: Häufig gestellte Fragen
+                type: structure
+                columns:
+                  question:
+                fields:
+                  question:
+                    label: Frage
+                    type: text
+                  answer:
+                    label: Antwort
+                    type: markdown

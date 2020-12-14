@@ -1,0 +1,11 @@
+headline: Bilder
+type: files
+layout: list
+parent: site.find('kompositionen')
+limit: 8
+size: small
+sortable: false
+image:
+  cover: true
+info: "{{ file.dimensions }} ({{ file.niceSize }})"
+empty: Keine Bilder vorhanden!

@@ -1,0 +1,70 @@
+label: Beteiligte
+icon: users
+columns:
+  column_left:
+    width: 1/2
+    sections:
+      section_left_main:
+        type: fields
+        fields:
+          # leaders:
+          #   extends: fields/people
+          #   label: Verantwortliche
+
+          composers:
+            extends: fields/people
+            label: "Komponist*innen"
+  column_right:
+    width: 1/2
+    sections:
+      section_right_main:
+        type: fields
+        fields:
+          educators:
+            extends: fields/people
+            label: "Musikpädagog*innen"
+            fields:
+              instruments:
+                extends: fields/instruments
+                width: 2/3
+              city:
+                label: Stadt
+                type: text
+                width: 1/3
+  column_full:
+    sections:
+      section_leadership:
+        type: fields
+        fields:
+          leaders:
+            extends: fields/people
+            label: Projektleitung
+            columns:
+              name:
+              position:
+              active:
+                width: 1/12
+            fields:
+              avatar: false
+              email: false
+              bio: false
+              web: false
+              position:
+                label: Tätigkeit(en)
+                type: text
+                width: 2/3
+              period:
+                label: Zeitraum
+                type: text
+                width: 1/3
+
+      section_cover:
+        extends: sections/images
+        headline: Alle Portraits
+        layout: cards
+        parent: site
+        template: avatar
+        limit: 14
+        size: tiny
+        image:
+          ratio: 1/1

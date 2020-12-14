@@ -1,0 +1,33 @@
+label: Beteiligte
+type: structure
+limit: 10
+columns:
+  name:
+  avatar:
+    width: 1/12
+sortBy: name asc
+fields:
+  name:
+    label: Name
+    type: text
+    width: 2/3
+  active:
+    extends: fields/toggle
+    label: Aktiv?
+    default: true
+    width: 1/3
+  avatar:
+    label: Bild
+    type: files
+    query: site.remainingAvatars
+    multiple: false
+    info: "{{ file.dimensions }} ({{ file.niceSize }})"
+  email:
+    label: E-Mail
+    type: email
+  bio:
+    label: Bio
+    type: textarea
+  web:
+    label: Webseite
+    type: url

@@ -1,0 +1,11 @@
+title: Stücke
+
+tabs:
+  # Content
+  tab_content: tabs/compositions
+
+  # Media
+  tab_media: tabs/media
+
+  # Metadata
+  tab_seo: tabs/seo

@@ -1,0 +1,11 @@
+headline: Dokumente
+type: files
+layout: list
+parent: site.find('kompositionen')
+limit: 8
+size: small
+sortable: false
+image:
+  cover: true
+info: "{{ file.niceSize }}"
+empty: Keine Dokumente vorhanden!

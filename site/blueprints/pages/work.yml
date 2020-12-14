@@ -1,0 +1,67 @@
+title: Stück
+
+num: 0
+
+tabs:
+  # Content
+  tab_content:
+    extends: tabs/template
+
+    sidebar:
+      sidebar_fields:
+        fields:
+          cover:
+            extends: fields/image
+            label: Cover
+            query: site.remainingCovers
+          composer:
+            label: "Komponist*in"
+            type: select
+            icon: user
+            options: query
+            query: site.getComposers
+          educators:
+            label: "Betreuer*innen"
+            type: relationship
+            options: query
+            query: site.getEducators
+          instruments: fields/instruments
+          samples:
+            label: Aufnahmen
+            type: files
+            query: site.find('kompositionen').files.filterBy('template', 'composition.sample')
+            # query: site.remainingSamples
+            info: "{{ file.niceSize }}"
+          notes:
+            label: Noten
+            type: structure
+            columns:
+              title:
+              depiction:
+                width: 1/8
+              notation:
+                width: 1/8
+            fields:
+              title:
+                label: Titel
+                type: text
+                default: Noten
+              depiction:
+                extends: fields/image
+                label: Abbildung
+                query: site.find('kompositionen').files.filterBy('template', 'composition.depiction')
+                image:
+                  ratio: 2/1
+                # query: site.remainingNotes
+              notation:
+                label: Noten
+                extends: fields/document
+                query: site.find('kompositionen').files.filterBy('template', 'composition.notation')
+
+      sidebar_files: false
+
+  # Media
+  tab_media: tabs/media
+
+  # Metadata
+  tab_seo: tabs/seo

@@ -1,0 +1,4 @@
+label: Instrument(e)
+type: tags
+options: query
+query: site.instruments

@@ -1,0 +1,28 @@
+title: Reading Sessions
+
+tabs:
+  # Content
+  tab_content:
+    label: Inhalt
+    icon: text
+    preset: page
+
+    fields:
+      text_top:
+        label: Text (oben)
+        type: textarea
+        size: tiny
+
+      text_bottom:
+        label: Text (unten)
+        type: textarea
+        size: tiny
+
+    sidebar:
+      sidebar_fields: false
+      sidebar_files: false
+      sidebar_gallery:
+        extends: sections/images
+        parent: page
+        sortable: true
+        limit: 4
