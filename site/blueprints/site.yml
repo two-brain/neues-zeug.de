@@ -7,25 +7,19 @@ tabs:
 
   tab_partners: tabs/partners
 
-  tab_settings:
-    label: FAQ
-    icon: question
+  tab_settings: tabs/settings
 
+  tab_analytics:
+    label: Statistik
+    icon: chart
     columns:
-      column_full:
+      column_matomo_main:
+        width: 3/4
         sections:
-          section_main:
-            type: fields
-            fields:
-              faq:
-                label: Häufig gestellte Fragen
-                type: structure
-                columns:
-                  question:
-                fields:
-                  question:
-                    label: Frage
-                    type: text
-                  answer:
-                    label: Antwort
-                    type: markdown
+          main:
+            type: matomo-main
+      column_matomo_sidebar:
+        width: 1/4
+        sections:
+          sidebar:
+            type: matomo-sidebar

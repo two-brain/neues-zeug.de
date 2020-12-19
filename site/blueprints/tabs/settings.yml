@@ -1,0 +1,47 @@
+label: Einstellungen
+icon: settings
+
+columns:
+  column_left:
+    width: 2/3
+    sections:
+      section_left_main:
+        type: fields
+        fields:
+          faq:
+            label: Häufig gestellte Fragen
+            type: structure
+            columns:
+              question:
+            fields:
+              question:
+                label: Frage
+                type: text
+              answer:
+                label: Antwort
+                type: markdown
+  column_right:
+    width: 1/3
+    sections:
+      section_right_pages:
+        headline: Seiten
+        type: pages
+        template:
+          - project
+          - sessions
+          - works
+      section_right_main:
+        type: fields
+        fields:
+          logo:
+            extends: fields/image
+            label: Logo
+            uploads: logo
+            query: site.images.filterBy('template', 'logo')
+            size: tiny
+          avatarFallback:
+            extends: fields/image
+            label: Ersatzportrait
+            uploads: avatar
+            query: site.images.filterBy('template', 'avatar')
+            size: tiny

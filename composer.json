@@ -19,11 +19,13 @@
     },
     "require": {
         "php": ">=7.2.0",
-        "getkirby/cms": "3.5.0-rc.6",
+        "getkirby/cms": "^3.5",
         "afbora/kirby-minify-html": "^1.2",
         "bnomei/kirby3-fingerprint": "^3.0",
         "k-community/markdown-field": "^1.0",
-        "olach/relationship": "^1.0"
+        "olach/relationship": "^1.0",
+        "sylvainjule/matomo": "^1.0",
+        "mzur/kirby-uniform": "^4.0"
     },
     "config": {
         "optimize-autoloader": true

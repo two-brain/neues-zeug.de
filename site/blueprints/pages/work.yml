@@ -26,6 +26,13 @@ tabs:
             options: query
             query: site.getEducators
           instruments: fields/instruments
+          video:
+            label: YouTube ID (optional)
+            type: text
+          samplesHeading:
+            label: Überschrift vor Aufnahmen
+            type: textarea
+            size: tiny
           samples:
             label: Aufnahmen
             type: files

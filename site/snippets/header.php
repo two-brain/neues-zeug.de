@@ -15,7 +15,41 @@
 
         <!-- Custom CSS -->
         <?= css('assets/agency.css') ?>
-
+        <style>
+            /* Audioplayer */
+            <?php foreach ($kirby->collection('compositions') as $composition) { echo '#playlist_' . $composition->uid() . ', '; } ?>#playlist_projektvortrag, audio {
+                margin: 0px;
+                width: 100%;
+                padding: 5px;
+            }
+            <?php foreach ($kirby->collection('compositions') as $composition) { echo '#playlist_' . $composition->uid() . ' .active a, '; } ?>#playlist_projektvortrag .active a {
+                color: #00ba96;
+                text-decoration: none;
+            }
+            <?php foreach ($kirby->collection('compositions') as $composition) { echo '#playlist_' . $composition->uid() . ' .active a:hover, '; } ?>#playlist_projektvortrag .active a:hover {
+                color: black;
+                text-decoration: none;
+            }
+            <?php foreach ($kirby->collection('compositions') as $composition) { echo '#playlist_' . $composition->uid() . ' li, '; } ?>#playlist_projektvortrag li {
+                margin-left: 15px;
+                font-size: 16px;
+            }
+            <?php foreach ($kirby->collection('compositions') as $composition) { echo '#playlist_' . $composition->uid() . ' li a, '; } ?>#playlist_projektvortrag li a {
+                color: black;
+                padding: 5px;
+                display: block;
+                text-decoration: none;
+            }
+            <?php foreach ($kirby->collection('compositions') as $composition) { echo '#playlist_' . $composition->uid() . ' li a:hover, '; } ?>#playlist_projektvortrag li a:hover {
+                background: #a7feed;
+                text-decoration: none;
+            }
+            /* Kirby Uniform */
+            .uniform__potty {
+                position: absolute;
+                left: -9999px;
+            }
+        </style>
         <!-- Custom Fonts -->
         <?= css('assets/styles/font-awesome.min.css') ?>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">

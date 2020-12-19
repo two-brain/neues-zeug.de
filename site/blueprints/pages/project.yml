@@ -1,0 +1,44 @@
+title: Über das Projekt
+
+tabs:
+  # Content
+  tab_content:
+    extends: tabs/template
+    fields:
+      blocks: false
+      text:
+        type: markdown
+      aspectsHeading:
+        label: Zwischenüberschrift
+        type: text
+      aspects:
+        label: Zentrale Aspekte
+        type: structure
+        columns:
+          title:
+        min: 3
+        max: 3
+        fields:
+          title:
+            label: Überschrift
+            type: text
+          text:
+            type: markdown
+      presentationHeading:
+        label: Zwischenüberschrift
+        type: text
+      presentationText:
+        label: Text zum Projektvortrag
+        type: markdown
+
+    sidebar:
+      sidebar_fields:
+        fields:
+          video:
+            label: YouTube ID (optional)
+            type: text
+      sidebar_files:
+        headline: Live-Mitschnitte
+        type: files
+        template: presentation
+        info: "{{ file.niceSize }}"
